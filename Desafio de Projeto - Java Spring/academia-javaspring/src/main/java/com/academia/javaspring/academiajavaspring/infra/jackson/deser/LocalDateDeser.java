@@ -1,5 +1,26 @@
 package com.academia.javaspring.academiajavaspring.infra.jackson.deser;
 
-public class LocalDateDeser {
-    
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.DeserializationContext;
+import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
+import com.academia.javaspring.academiajavaspring.infra.utils.JavaTimeUtils;
+
+import java.io.IOException;
+import java.time.LocalDate;
+
+/**
+ * @author Venilton Falvo Jr
+ */
+public class LocalDateDeser extends StdDeserializer<LocalDate> {
+
+	private static final long serialVersionUID = -4589164298310392227L;
+
+	public LocalDateDeser() {
+        super(LocalDate.class);
+    }
+
+    @Override
+    public LocalDate deserialize(final JsonParser parser, final DeserializationContext context) throws IOException {
+        return LocalDate.parse(parser.readValueAs(String.class), JavaTimeUtils.LOCAL_DATE_FORMATTER);
+    }
 }
