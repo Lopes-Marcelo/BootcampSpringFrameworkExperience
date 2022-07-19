@@ -1,34 +1,20 @@
 import java.util.*;
  
 public class DesafioD{
-
-    //complete o código para que ele funcione corretamente
- 
     public static void main(String[] args) {
-
-        //a classe Scanner auxilia na leitura dos dados de entrada
-        Scanner scan = new Scanner(System.in);
-        
-        int N = scan.nextInt();
-
+        Scanner teclado = new Scanner(System.in);
+        int N = teclado.nextInt();
         int[] idade = new int[N];
-
-        for (int i = 0; i < N; i++)
-        {
-            idade[i] = scan.nextInt();
+        for (int i = 0; i < N; i++){
+            idade[i] = teclado.nextInt();
         }
-
         System.out.println("Nao poderao entrar as idades: ");
-        for (int i = 0; i < N; i++)
-        {
-            if (idade[i] < 18)
-            {
+        for (int i = 0; i < N; i++){
+            if (idade[i] < 18){
                 System.out.println(idade[i]);
             }
-
         }
-
-        scan.close();
+        teclado.close();
     }
 
 }
