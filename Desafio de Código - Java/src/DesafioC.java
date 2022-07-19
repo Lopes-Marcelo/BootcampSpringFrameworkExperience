@@ -3,18 +3,18 @@ import java.util.Scanner;
 public class DesafioC {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        int number,id;
-        number = teclado.nextInt();
-        id = teclado.nextInt();
+        int number, id;
+        number = teclado.nextInt(); //número de views
+        id = teclado.nextInt(); //minha id 
         int count=0;
-        while(number>0){
-            int id1,num;
-            id1 = teclado.nextInt();
-            num = teclado.nextInt();
-            if(id ==      &&  num ==      ){
+        while(number > 0){
+            int id1, num;
+            id1 = teclado.nextInt(); //id do autor
+            num = teclado.nextInt(); //cs ou lol, 0 e 1
+            
+            if(id == id1 && num == 0){
 		        count++;
 	        }
-             
             number--;
         }
         System.out.println(count);
