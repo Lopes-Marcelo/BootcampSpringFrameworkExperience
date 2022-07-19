@@ -22,6 +22,6 @@ Tendo em vista um conhecimento prévio sobre linguagem Java e Framework Spring B
 
 @ManyToOne Usada para especificar um relacionamento de banco de dados muitos-para-um.
 
-cascade Realizar operações em cascata só faz sentido em relacionamentos Pai - Filho.
+cascade Realizar operações em cascata só faz sentido em relacionamentos Mãe - Filha.
 
 mappedBy Indica qual é o lado inverso ou não dominante da relação.
