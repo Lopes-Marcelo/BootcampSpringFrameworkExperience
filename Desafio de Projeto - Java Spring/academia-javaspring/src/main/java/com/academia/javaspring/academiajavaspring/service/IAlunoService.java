@@ -5,7 +5,6 @@ import com.academia.javaspring.academiajavaspring.entity.AvaliacaoFisica;
 import com.academia.javaspring.academiajavaspring.entity.form.AlunoForm;
 import com.academia.javaspring.academiajavaspring.entity.form.AlunoUpdateForm;
 
-import java.time.LocalDate;
 import java.util.List;
 
 public interface IAlunoService {
