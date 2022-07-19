@@ -1,9 +1,10 @@
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Scanner;
 
 public class DesafioB {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-       
         int casos = teclado.nextInt();
         int cont = 0;
         while (cont < casos){
@@ -11,12 +12,10 @@ public class DesafioB {
             double a = teclado.nextDouble();
             double b = teclado.nextDouble();
             double c = teclado.nextDouble();
-	
-	   // TODO: complete os espaços em branco com sua solução para o problema
-      
 
-
-              
+            double media = ((a * 2) + (b * 3) + (c * 5)) / 10;
+            BigDecimal mediaf = new BigDecimal(media).setScale(1, RoundingMode.HALF_EVEN);
+            System.out.println(mediaf.doubleValue());
             cont++;
         }
         teclado.close();

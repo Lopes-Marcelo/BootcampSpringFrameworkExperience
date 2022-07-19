@@ -4,10 +4,10 @@ public class DesafioA {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 // TODO: complete os espaços em branco com sua solução para o problema
-		String[] nomes = new String[     ];
+//    	String[] nomes = new String[     ];
 		
 		for(int i=0 ; i<10 ; i++){
-            nomes[    ] = sc.nextLine();
+//            nomes[    ] = sc.nextLine();
         }
 
         teclado.close();
