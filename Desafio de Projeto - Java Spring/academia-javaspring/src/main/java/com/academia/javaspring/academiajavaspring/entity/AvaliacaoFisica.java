@@ -1,12 +1,20 @@
 package com.academia.javaspring.academiajavaspring.entity;
 
+import java.time.LocalDateTime;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
-
-import javax.persistence.*;
-import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor
@@ -18,7 +26,7 @@ public class AvaliacaoFisica {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  @ManyToOne
+  @ManyToOne(cascade = CascadeType.ALL)
   @JoinColumn(name = "aluno_id")
   private Aluno aluno;
 
@@ -29,5 +37,22 @@ public class AvaliacaoFisica {
 
   @Column(name="altura_atual")
   private double altura;
+
+public void setAluno(Aluno aluno2) {
+}
+
+public LocalDateTime getDataDaAvaliacao() {
+  return dataDaAvaliacao;
+}
+
+public void setDataDaAvaliacao(LocalDateTime dataDaAvaliacao) {
+  this.dataDaAvaliacao = dataDaAvaliacao;
+}
+
+public void setAluno(Object peso2) {
+}
+
+public void setAltura(Object altura2) {
+}
 
 }

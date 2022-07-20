@@ -3,6 +3,9 @@ package com.academia.javaspring.academiajavaspring.infra.utils;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
+/**
+ * @author Venilton Falvo Jr
+ */
 public class JavaTimeUtils {
 	
 	private JavaTimeUtils() {}

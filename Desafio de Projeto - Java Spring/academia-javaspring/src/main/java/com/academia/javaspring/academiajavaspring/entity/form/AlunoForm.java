@@ -1,12 +1,15 @@
 package com.academia.javaspring.academiajavaspring.entity.form;
 
+import java.time.LocalDate;
+
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.validator.constraints.br.CPF;
-
-import javax.validation.constraints.*;
-import java.time.LocalDate;
 
 @Data
 @NoArgsConstructor
@@ -28,4 +31,20 @@ public class AlunoForm {
   @NotNull(message = "Prencha o campo corretamente.")
   @Past(message = "Data '${validatedValue}' é inválida.")
   private LocalDate dataDeNascimento;
+
+public String getNome() {
+    return null;
+}
+
+public String getCpf() {
+    return null;
+}
+
+public String getBairro() {
+    return null;
+}
+
+public LocalDate getDataDeNascimento() {
+    return null;
+}
 }

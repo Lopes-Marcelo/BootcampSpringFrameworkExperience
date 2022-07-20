@@ -1,11 +1,11 @@
 package com.academia.javaspring.academiajavaspring.service;
 
+import java.util.List;
+
 import com.academia.javaspring.academiajavaspring.entity.Aluno;
 import com.academia.javaspring.academiajavaspring.entity.AvaliacaoFisica;
 import com.academia.javaspring.academiajavaspring.entity.form.AlunoForm;
 import com.academia.javaspring.academiajavaspring.entity.form.AlunoUpdateForm;
-
-import java.util.List;
 
 public interface IAlunoService {
   /**
